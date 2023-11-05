@@ -10,7 +10,7 @@
           hours = hours ? hours : 12; // "0" should be displayed as "12".
 
           // Format hours and minutes with leading zeros.
-          var formattedTime = (hours < 10 ? '0' : '') + hours + ':' + (minutes < 10 ? '0' : '') + minutes + ' ' + ampm;
+          var formattedTime =  hours + ':' + minutes + ' ' + ampm;
 
           // Update the time displayed on the page.
           $('.time-zone .time').text(formattedTime);
