@@ -80,6 +80,7 @@ class TimezoneBlock extends BlockBase implements ContainerFactoryPluginInterface
       '#country' => $country,
       '#city' => $city,
       '#date' => $dateTime['date'],
+      '#title' => FALSE,
       '#time' => $dateTime['time'],
       '#cache' => [
         'tags' => ['config:time_zone.settings'],
